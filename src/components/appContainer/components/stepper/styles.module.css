@@ -1,0 +1,55 @@
+.container > div {
+  display: inline-block;
+}
+
+.container > div::after,
+.container > div::before {
+  content: "";
+  display: inline-flex;
+  background: var(--app-ash);
+}
+
+.container > div > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--app-gray);
+  font-weight: 500;
+  border: 1px solid var(--app-ash);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.container > div:nth-of-type(1)::after {
+  width: 30px;
+  height: 2px;
+}
+
+.container > div:nth-of-type(2)::after,
+.container > div:nth-of-type(2)::before {
+  width: 30px;
+  height: 2px;
+}
+
+.container > div:nth-of-type(3)::after,
+.container > div:nth-of-type(3)::before {
+  width: 30px;
+  height: 2px;
+}
+
+.container > div:nth-of-type(4)::before {
+  width: 30px;
+  height: 2px;
+}
+
+.active span {
+  background: var(--app-blue);
+  border-color: var(--app-blue) !important;
+  color: var(--app-white) !important;
+}
+
+.active::after,
+.active::before {
+  background: var(--app-blue) !important;
+}

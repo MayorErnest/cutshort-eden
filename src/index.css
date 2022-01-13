@@ -5,6 +5,7 @@
   --app-black: #080b11;
   --app-blue: #664de5;
   --app-ash: #a8afbd;
+  --app-gray: #5a6477;
 }
 
 * {
@@ -12,4 +13,16 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--app-white);
+  height: 100vh;
+}
+
+.container {
+  max-width: 1280px;
 }
