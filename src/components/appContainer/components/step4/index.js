@@ -1,9 +1,15 @@
 import React from "react";
 import { Button, Form, StepHeader } from "..";
+import { CircleTick } from "../../../../assets";
+
+import styles from "./styles.module.css";
 
 const Step4 = () => {
   return (
-    <div>
+    <div className={styles.container}>
+      <div className={styles["tick-box"]}>
+        <CircleTick />
+      </div>
       <StepHeader
         headerBig={"Congratulations, Eren!"}
         headerSmall={

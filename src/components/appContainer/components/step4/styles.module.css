@@ -1,0 +1,14 @@
+.tick-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tick-box svg {
+  width: 70px;
+  height: 70px;
+}
+
+.tick-box svg > * {
+  transform: scale(0.45);
+}
