@@ -1,5 +1,5 @@
 import React from "react";
-import { StepHeader } from "..";
+import { Button, Form, StepHeader } from "..";
 
 const Step4 = () => {
   return (
@@ -10,6 +10,9 @@ const Step4 = () => {
           "You have completed onboarding, you can start using the Eden!"
         }
       />
+      <Form>
+        <Button text="Launch Eden" />
+      </Form>
     </div>
   );
 };

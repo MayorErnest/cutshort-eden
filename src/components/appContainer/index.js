@@ -22,7 +22,7 @@ const AppContainer = () => {
         ) : stepperState[1] && !stepperState[2] ? (
           <Step2 onChange={handleChangeStep} />
         ) : stepperState[2] && !stepperState[3] ? (
-          <Step3 />
+          <Step3 onChange={handleChangeStep} />
         ) : (
           <Step4 />
         )}
