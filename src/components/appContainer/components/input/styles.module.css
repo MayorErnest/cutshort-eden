@@ -1,0 +1,23 @@
+.container label {
+  display: block;
+  color: var(--app-gray);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.container input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--app-ash);
+  border-radius: 5px;
+}
+
+.container input:focus {
+  outline-color: var(--app-blue);
+}
+
+.container input::placeholder {
+  color: var(--app-ash);
+  font-weight: 500;
+}
