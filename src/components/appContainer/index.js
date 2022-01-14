@@ -1,4 +1,5 @@
 import React, { useCallback, useState } from "react";
+import { EdenLogo } from "../../assets";
 import { Step1, Step2, Step3, Step4, Stepper } from "./components";
 
 import styles from "./styles.module.css";
@@ -13,6 +14,7 @@ const AppContainer = () => {
   return (
     <div className={`${styles.container} container`}>
       <header>
+        <EdenLogo />
         <h1>Eden</h1>
       </header>
       <Stepper stepperState={stepperState} />
