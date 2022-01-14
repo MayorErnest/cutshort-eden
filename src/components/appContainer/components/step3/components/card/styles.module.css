@@ -1,0 +1,41 @@
+.container {
+  border: 1px solid var(--app-ash);
+  border-radius: 5px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.container:hover {
+  border: 1px solid var(--app-blue);
+  transform: scale(1.15);
+}
+
+.container:hover svg {
+  fill: var(--app-blue);
+}
+
+.container > * {
+  margin-bottom: 10px;
+}
+
+.container svg {
+  height: 30px;
+}
+
+.container h2 {
+  font-size: 1.1rem;
+}
+
+.container p {
+  line-height: 24px;
+  font-size: 0.9rem;
+  color: var(--app-ash);
+}
+
+.active {
+  border: 1px solid var(--app-blue);
+}
+
+.active svg {
+  fill: var(--app-blue);
+}
