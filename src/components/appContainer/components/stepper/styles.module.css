@@ -1,12 +1,10 @@
+.container {
+  text-align: center;
+  margin-bottom: 90px;
+}
 .container > div {
   display: inline-block;
-}
-
-.container > div::after,
-.container > div::before {
-  content: "";
-  display: inline-flex;
-  background: var(--app-ash);
+  margin: auto;
 }
 
 .container > div > span {
@@ -17,29 +15,24 @@
   font-weight: 500;
   border: 1px solid var(--app-ash);
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
-.container > div:nth-of-type(1)::after {
-  width: 30px;
+.container > div::after,
+.container > div::before {
+  content: "";
+  display: inline-flex;
+  background: var(--app-ash);
+}
+
+.container > div:not(:nth-of-type(1))::before {
+  width: 15px;
   height: 2px;
 }
 
-.container > div:nth-of-type(2)::after,
-.container > div:nth-of-type(2)::before {
-  width: 30px;
-  height: 2px;
-}
-
-.container > div:nth-of-type(3)::after,
-.container > div:nth-of-type(3)::before {
-  width: 30px;
-  height: 2px;
-}
-
-.container > div:nth-of-type(4)::before {
-  width: 30px;
+.container > div:not(:nth-of-type(4))::after {
+  width: 15px;
   height: 2px;
 }
 
@@ -52,4 +45,19 @@
 .active::after,
 .active::before {
   background: var(--app-blue) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .container > div > span {
+    width: 40px;
+    height: 40px;
+  }
+
+  .container > div:not(:nth-of-type(1))::before {
+    width: 30px;
+  }
+
+  .container > div:not(:nth-of-type(4))::after {
+    width: 30px;
+  }
 }

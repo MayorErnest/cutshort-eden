@@ -2,7 +2,12 @@
   max-width: 1280px;
 }
 
+.container header {
+  margin-bottom: 70px;
+}
+
 .container h1 {
   color: var(--app-black);
   font-weight: 600;
+  text-align: center;
 }
