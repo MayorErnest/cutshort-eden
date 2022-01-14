@@ -6,6 +6,7 @@
   --app-blue: #664de5;
   --app-ash: #a8afbd;
   --app-gray: #5a6477;
+  --app-teal: #f8f9fc;
 }
 
 * {
@@ -25,4 +26,5 @@ body {
 
 .container {
   max-width: 1280px;
+  padding: 0px 30px;
 }

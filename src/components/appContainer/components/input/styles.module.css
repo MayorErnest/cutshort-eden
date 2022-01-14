@@ -21,3 +21,29 @@
   color: var(--app-ash);
   font-weight: 500;
 }
+
+.input-box {
+  display: flex;
+}
+
+.input-box span {
+  background: var(--app-teal);
+  border: 1px solid var(--app-ash);
+  border-radius: 5px;
+  color: var(--app-ash);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 14px;
+}
+
+.extended .input-box span {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: none;
+}
+
+.extended input {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: none;
+}
