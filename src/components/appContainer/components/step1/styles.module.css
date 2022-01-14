@@ -1,0 +1,22 @@
+.container {
+  animation: slide-in 0.9s forwards;
+  -webkit-animation: slide-in 0.9s forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    -webkit-transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
